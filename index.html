@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yerkenaz Sagynbayeva | Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Yerkenaz Sagynbayeva</h1>
-        <p>IT Management Student & Aspiring Web Developer</p>
+        <h1>Yerkenaz Sagynbayeva - Week2</h1>
+        <p>IT Management Student & Web Developer</p>
     </header>
 
     <nav>
@@ -22,24 +24,53 @@
 
     <main>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <section
+    id="about"
+    class="profile-card bg-white p-8 rounded-2xl shadow-md"
+>
 
+    <div class="profile-content flex items-center gap-6">
+
+        <div class="avatar">
             <img 
                 src="11.jpeg" 
-                alt="Placeholder profile avatar for Yerkenaz Sagynbayeva"
-                width="200"
+                alt="Profile photo of Yerkenaz Sagynbayeva"
             >
+        </div>
+
+        <div class="profile-info">
+
+            <h2>Yerkenaz Sagynbayeva</h2>
 
             <p>
-                Hello! My name is Yerkenaz Sagynbayeva. I am an IT Management
-                student at Kazakhstan-British Technical University (KBTU).
-                I am interested in technology, web development, and learning
-                how to build useful digital products. I hope this course will
-                help me improve my HTML, CSS, JavaScript, and web development
-                skills and build my own portfolio.
+                I am an IT Management student at KBTU interested in
+                technology and web development. I enjoy learning
+                programming and creating useful digital products.
             </p>
-        </section>
+
+            <div class="links flex gap-4 mt-4">
+                <a href="mailto:y_sagynbayeva@kbtu.kz">
+                    Email
+                </a>
+
+                <a href="https://github.com/yerkenaz19" target="_blank">
+                    GitHub
+                </a>
+            </div>
+
+            <button 
+                id="like-button"
+                type="button"
+                class="mt-5 px-5 py-2 rounded-lg bg-black text-white"
+>
+                 ♡ Like
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 
         <section id="skills">
             <h2>My Skills</h2>
@@ -90,7 +121,7 @@
 
             <p>
                 Email:
-                <a href="mailto:your.email@exam.com">
+                <a href="mailto:y_sagynbayeva@kbtu.kz">
                     y_sagynbayeva@kbtu.kz
                 </a>
             </p>
@@ -127,6 +158,7 @@
     <footer>
         <p>&copy; 2026 Yerkenaz Sagynbayeva. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
