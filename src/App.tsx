@@ -1,8 +1,22 @@
 import Header from './components/Header'
 import ProfileCard from './components/ProfileCard'
 import Footer from './components/Footer'
+import SkillBadge from './components/SkillBadge'
 import profileImage from './assets/11.jpeg'
 import '../style.css'
+
+type Skill = {
+  id: number
+  label: string
+}
+
+const skills: Skill[] = [
+  { id: 1, label: 'HTML and Web Development' },
+  { id: 2, label: 'Python Programming' },
+  { id: 3, label: 'C++ Programming' },
+  { id: 4, label: 'SQL and Databases' },
+  { id: 5, label: 'Git and GitHub' },
+]
 
 function App() {
   return (
@@ -25,11 +39,13 @@ function App() {
           <h2>My Skills</h2>
 
           <ul>
-            <li>HTML and Web Development</li>
-            <li>Python Programming</li>
-            <li>C++ Programming</li>
-            <li>SQL and Databases</li>
-            <li>Git and GitHub</li>
+            {skills.length > 0 ? (
+              skills.map((skill) => (
+                <SkillBadge key={skill.id} skill={skill} />
+              ))
+            ) : (
+              <li>No skills available</li>
+            )}
           </ul>
         </section>
 
