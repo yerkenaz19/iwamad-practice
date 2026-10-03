@@ -25,9 +25,14 @@ function ProfileCard({
       <div className="profile-content flex items-center gap-6">
         <div className="avatar">
           <img
-            src={avatarUrl}
-            alt={`Profile photo of ${name}`}
-          />
+  src={avatarUrl}
+  alt={`Profile photo of ${name}`}
+  style={{
+    width: '150px',
+    height: '150px',
+    objectFit: 'cover',
+  }}
+/>
         </div>
 
         <div className="profile-info">

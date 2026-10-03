@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router'
+
 type HeaderProps = {
   title: string
   subtitle: string
@@ -12,10 +14,26 @@ function Header({ title, subtitle }: HeaderProps) {
       </header>
 
       <nav>
-        <a href="#about">About</a> |{' '}
-        <a href="#skills">Skills</a> |{' '}
-        <a href="#goals">Goals</a> |{' '}
-        <a href="#contact">Contact</a>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Home
+        </NavLink>{' '}
+        |{' '}
+        <NavLink
+          to="/skills"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Skills
+        </NavLink>{' '}
+        |{' '}
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Contact
+        </NavLink>
       </nav>
     </>
   )
