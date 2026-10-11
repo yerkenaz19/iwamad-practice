@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router'
 import { useLikes } from '../context/LikesContext'
+import logo from '../assets/logo.svg'
 
 type HeaderProps = {
   title: string
@@ -12,11 +13,14 @@ function Header({ title, subtitle }: HeaderProps) {
   return (
     <>
       <header>
-        <h1>{title}</h1>
+        <div className="site-brand">
+          <img src={logo} alt="" width={32} height={32} />
+          <h1>{title}</h1>
+        </div>
         <p>{subtitle}</p>
       </header>
 
-      <nav>
+      <nav className="site-nav">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? 'active' : '')}

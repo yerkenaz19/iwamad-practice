@@ -13,7 +13,7 @@ test('like button changes visible text when clicked', async () => {
     </LikesProvider>,
   )
 
-  const button = screen.getByRole('button', { name: '♡ Like' })
+  const button = screen.getByRole('button', { name: 'Like (0 likes)' })
 
   await user.click(button)
 

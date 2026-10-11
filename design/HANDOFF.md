@@ -14,3 +14,6 @@ space/2 = 8px
 space/4 = 16px
 space/6 = 24px
 Radius: radius/md = 8px
+## Contrast fix
+- `color/text-muted`: `#9CA3AF` → `#6B7280`
+- Reason: The original muted text color did not provide sufficient contrast on a white background. The darker color improves readability and meets the 4.5:1 contrast target for normal text.

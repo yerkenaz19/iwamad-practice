@@ -1,13 +1,16 @@
 import { useLikes } from '../context/LikesContext'
+import Button from './ui/Button'
 
-function LikeButton() {
+export default function LikeButton() {
   const { likes, addLike } = useLikes()
 
   return (
-    <button type="button" onClick={addLike}>
-      {likes > 0 ? `♥ ${likes}` : '♡ Like'}
-    </button>
+    <Button
+      variant="primary"
+      onClick={addLike}
+      aria-label={`Like (${likes} likes)`}
+    >
+      ♥ {likes}
+    </Button>
   )
 }
-
-export default LikeButton
