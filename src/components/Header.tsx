@@ -41,6 +41,13 @@ function Header({ title, subtitle }: HeaderProps) {
         >
           Contact
         </NavLink>
+        {' '} | {' '}
+<NavLink
+  to="/register"
+  className={({ isActive }) => (isActive ? 'active' : '')}
+>
+  Register
+</NavLink>
       </nav>
 
       <p>♥ {likes}</p>
