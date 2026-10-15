@@ -19,7 +19,7 @@ function ProfileCard({
   return (
     <Card>
       <section id="about" className="profile-card">
-        <div className="profile-content flex items-center gap-6">
+        <div className="profile-content">
           <div className="avatar">
             <img
               src={avatarUrl}
@@ -37,13 +37,13 @@ function ProfileCard({
 
             <p>{bio}</p>
 
-            <div className="links flex gap-4 mt-4">
-              <a href={`mailto:${email}`}>Email</a>
+            <div className="links">
+  <a href={`mailto:${email}`}>Email</a>
 
-              <a href={githubUrl} target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            </div>
+  <a href={githubUrl} target="_blank" rel="noreferrer">
+    GitHub
+  </a>
+</div>
 
             <LikeButton />
           </div>

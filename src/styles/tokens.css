@@ -1,10 +1,13 @@
 :root {
   --color-primary: #1D4ED8;
   --color-on-primary: #FFFFFF;
+
   --color-text: #1F2937;
   --color-text-muted: #6B7280;
+
   --color-surface: #FFFFFF;
   --color-border: #D1D5DB;
+
   --color-error: #b91c1c;
 
   --space-2: 8px;
@@ -12,4 +15,19 @@
   --space-6: 24px;
 
   --radius-md: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #60A5FA;
+    --color-on-primary: #111827;
+
+    --color-text: #F9FAFB;
+    --color-text-muted: #D1D5DB;
+
+    --color-surface: #111827;
+    --color-border: #374151;
+
+    --color-error: #F87171;
+  }
 }

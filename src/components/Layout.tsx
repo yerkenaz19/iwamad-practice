@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
       <Header
-        title="Yerkenaz Sagynbayeva - Week4"
+        title="Yerkenaz Sagynbayeva - Week6"
         subtitle="IT Management Student & Web Developer"
       />
 
