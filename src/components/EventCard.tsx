@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import type { CampusEvent } from '../data/events'
+import Tag from './ui/Tag'
 
 type EventCardProps = {
   event: CampusEvent
@@ -14,7 +15,7 @@ function EventCard({ event }: EventCardProps) {
 
       <p>{event.place}</p>
 
-      <span>{event.seats} seats</span>
+      <Tag label={`${event.seats} seats`} />
 
       <Link to={`/events/${event.id}`}>
         Details

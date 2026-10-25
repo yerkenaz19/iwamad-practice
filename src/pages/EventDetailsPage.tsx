@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router'
 import { events } from '../data/events'
+import EventSignupForm from '../components/EventSignupForm'
 
 function EventDetailsPage() {
   const { eventId } = useParams()
@@ -29,6 +30,8 @@ function EventDetailsPage() {
       <p>{event.date}</p>
 
       <p>{event.place}</p>
+
+      <EventSignupForm event={event} />
 
       <Link to="/events">
         Back to events
